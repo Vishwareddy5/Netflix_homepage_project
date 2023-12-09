@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@300&family=Martel+Sans:wght@600&family=Montserrat&family=Noto+Serif&family=Orbit&family=Poppins:wght@300&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: black;
+}
+.main {
+  background-image: url(Assets/images/BG.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  background-size: max(1200px, 100vw);
+  /* this is written for responsive when we zoom in/out */
+
+  height: 100vh;
+  position: relative;
+}
+.main .box {
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  opacity: 0.69;
+  position: absolute;
+  top: 0;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  max-width: 80vw;
+  margin: auto;
+  height: 62px;
+  align-items: center;
+  padding: 42px 0px; 
+}
+nav img {
+  /* the color of Netflix logo is changed to red by making changes in svg link  */
+  width: 157px;
+  position: relative;
+  z-index: 10;
+}
+nav button {
+  position: relative;
+  z-index: 10;
+}
+.hero {
+  height: 87.5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0px 30px;
+
+  /* here position is made relative bcoz the hero container 
+  will pop out from box container */
+  position: relative;
+  top: 25px;
+
+  color: white;
+  font-family: "Martel Sans", sans-serif;
+  gap: 13px;
+}
+.hero > :nth-child(1) {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-size: 48px;
+  text-align: center;
+  letter-spacing: 2px;
+  /* here [.hero>] ">" is give for immediate first child*/
+}
+.hero > :nth-child(2) {
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+  /* here [.hero>] ">" is give for immediate second child*/
+}
+.hero > :nth-child(3) {
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  /* here [.hero>] ">" is give for immediate second child*/
+}
+.separation {
+  height: 7px;
+  position: relative;
+  top: 30px;
+  background-color: rgba(66, 66, 66, 0.546);
+}
+
+.btn {
+  padding: 3px 8px;
+
+  background-color: white;
+  color: white;
+  border: 1px solid rgb(96, 96, 96);
+  background-color: rgba(248, 243, 243, 0.021);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 20px;
+
+}
+.btn-red {
+  background: rgb(229, 9, 20);
+  color: white;
+  padding: 3px 24px;
+  border-radius: 4px;
+  font-size: 20px;
+  outline: none;
+  border: none;
+  transition: background-color 0.3s ease-in-out;
+}
+.btn-red:hover{
+  background-color: rgba(229, 9, 20, 0.626);
+}
+.btn-red-sm {
+  background: rgb(229, 9, 20);
+  color: white;
+  font-size: 20px;
+}
+.btn-red-sm:hover{
+  background-color: rgba(229, 9, 20, 0.705);
+  transition: background-color 0.3s ease-in-out;
+}
+.hero-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.main input {
+  padding: 7px 101px 8px 14px;
+  font-size: 12px;
+  border-radius: 4px;
+  background-color: rgba(23, 23, 23, 0.5);
+  outline: none;
+  border: 1px solid rgb(172, 172, 172);
+  color: white;
+  font-weight: 900;
+}
+
